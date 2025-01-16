@@ -3,11 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
+    const names = ["Dimuch", "Sveta", "Katya", "Viktor"]
 
-    </div>
-  );
+    return (
+        <div className="App">
+            <ul>
+                {names.map((n, i) => <li key={i}>{n}</li>)}
+            </ul>
+        </div>
+    );
 }
 
 export default App;
